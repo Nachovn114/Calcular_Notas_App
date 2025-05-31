@@ -2,25 +2,35 @@
 
 # 📱 Calculadora de Notas
 
-![Banner](https://raw.githubusercontent.com/Nachovn114/Calcular_Notas_App/main/assets/images/banner.png)
+<img src="assets/images/banner.png" alt="Banner de Calculadora de Notas" width="800">
 
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Nachovn114/Calcular_Notas_App/flutter-ci.yml?label=CI&logo=github)](https://github.com/Nachovn114/Calcular_Notas_App/actions/workflows/flutter-ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?logo=opensource)](https://opensource.org/licenses/MIT)
-[![Flutter Version](https://img.shields.io/badge/Flutter-3.2.3-blue?logo=flutter)](https://flutter.dev)
-[![GitHub stars](https://img.shields.io/github/stars/Nachovn114/Calcular_Notas_App?style=social&logo=github)](https://github.com/Nachovn114/Calcular_Notas_App/stargazers)
+[![CI Status](https://img.shields.io/github/actions/workflow/status/Nachovn114/Calcular_Notas_App/flutter-ci.yml?label=CI&logo=github&style=flat-square)](https://github.com/Nachovn114/Calcular_Notas_App/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Flutter](https://img.shields.io/badge/Flutter-3.2.3-blue?logo=flutter&style=flat-square)](https://flutter.dev)
+[![Stars](https://img.shields.io/github/stars/Nachovn114/Calcular_Notas_App?style=flat-square)](https://github.com/Nachovn114/Calcular_Notas_App/stargazers)
 
 ## 🎯 La forma más inteligente de gestionar tus notas académicas
 
 Una aplicación móvil moderna que revoluciona la manera de calcular y gestionar tus calificaciones. Diseñada con Flutter y Material Design 3 para ofrecer la mejor experiencia de usuario.
 
-[📥 Descargar App](https://github.com/Nachovn114/Calcular_Notas_App/releases) · [📖 Documentación](https://github.com/Nachovn114/Calcular_Notas_App/wiki) · [🐛 Reportar Bug](https://github.com/Nachovn114/Calcular_Notas_App/issues)
+<div style="display: flex; justify-content: center; gap: 20px;">
+  <a href="https://github.com/Nachovn114/Calcular_Notas_App/releases" style="text-decoration: none;">
+    📥 Descargar App
+  </a>
+  <a href="https://github.com/Nachovn114/Calcular_Notas_App/wiki" style="text-decoration: none;">
+    📖 Documentación
+  </a>
+  <a href="https://github.com/Nachovn114/Calcular_Notas_App/issues" style="text-decoration: none;">
+    🐛 Reportar Bug
+  </a>
+</div>
 
 </div>
 
 ## ✨ Características Destacadas
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Nachovn114/Calcular_Notas_App/main/assets/images/features.png" alt="Características principales">
+  <img src="assets/images/features.png" alt="Características principales" width="800">
 </div>
 
 ### 📊 Dashboard Inteligente
@@ -41,18 +51,18 @@ Una aplicación móvil moderna que revoluciona la manera de calcular y gestionar
 ## 📱 Vista Previa
 
 <div align="center">
-<table>
-<tr>
-<td><img src="assets/screenshots/onboarding_1.jpg" width="200" alt="Tutorial"></td>
-<td><img src="assets/screenshots/analisis.jpg" width="200" alt="Análisis"></td>
-<td><img src="assets/screenshots/detalle_asignatura.jpg" width="200" alt="Detalle"></td>
-</tr>
-<tr>
-<td align="center"><b>Onboarding</b></td>
-<td align="center"><b>Análisis</b></td>
-<td align="center"><b>Detalles</b></td>
-</tr>
-</table>
+  <table>
+    <tr>
+      <td><img src="assets/screenshots/onboarding_1.jpg" width="250" alt="Tutorial"></td>
+      <td><img src="assets/screenshots/analisis.jpg" width="250" alt="Análisis"></td>
+      <td><img src="assets/screenshots/detalle_asignatura.jpg" width="250" alt="Detalle"></td>
+    </tr>
+    <tr>
+      <td align="center"><b>Onboarding</b></td>
+      <td align="center"><b>Análisis</b></td>
+      <td align="center"><b>Detalles</b></td>
+    </tr>
+  </table>
 </div>
 
 ## 🚀 Instalación Rápida
@@ -71,11 +81,11 @@ flutter run
 ## 🛠️ Tecnologías Utilizadas
 
 <div align="center">
-<p float="left">
-  <img src="https://storage.googleapis.com/cms-storage-bucket/6a07d8a62f4308d2b854.svg" width="150" alt="Flutter">
-  <img src="https://raw.githubusercontent.com/dart-lang/site-shared/master/src/_assets/image/dart/logo/64.png" width="50" alt="Dart">
-  <img src="https://miro.medium.com/max/300/1*R4c8lHBHuH5qyqOtZb3h-w.png" width="50" alt="Firebase">
-</p>
+  <p align="center">
+    <img src="https://storage.googleapis.com/cms-storage-bucket/6a07d8a62f4308d2b854.svg" width="200" alt="Flutter">
+    <img src="https://dart.dev/assets/img/shared/dart/logo+text/horizontal/white.svg" width="200" alt="Dart">
+    <img src="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-built_white.svg" width="200" alt="Firebase">
+  </p>
 </div>
 
 - **Flutter 3.2.3** - Framework de UI
@@ -104,14 +114,14 @@ Si encuentras útil este proyecto:
 
 ### 📊 Estadísticas del Proyecto
 
-[![GitHub contributors](https://img.shields.io/github/contributors/Nachovn114/Calcular_Notas_App?style=for-the-badge)](https://github.com/Nachovn114/Calcular_Notas_App/graphs/contributors)
-[![GitHub issues](https://img.shields.io/github/issues/Nachovn114/Calcular_Notas_App?style=for-the-badge)](https://github.com/Nachovn114/Calcular_Notas_App/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/Nachovn114/Calcular_Notas_App?style=for-the-badge)](https://github.com/Nachovn114/Calcular_Notas_App/pulls)
+[![Contributors](https://img.shields.io/github/contributors/Nachovn114/Calcular_Notas_App?style=for-the-badge)](https://github.com/Nachovn114/Calcular_Notas_App/graphs/contributors)
+[![Issues](https://img.shields.io/github/issues/Nachovn114/Calcular_Notas_App?style=for-the-badge)](https://github.com/Nachovn114/Calcular_Notas_App/issues)
+[![PRs](https://img.shields.io/github/issues-pr/Nachovn114/Calcular_Notas_App?style=for-the-badge)](https://github.com/Nachovn114/Calcular_Notas_App/pulls)
 
 </div>
 
 ---
 
 <div align="center">
-<sub>Construido con ❤️ por <a href="https://github.com/Nachovn114">Ignacio Valeria</a></sub>
+  <sub>Construido con ❤️ por <a href="https://github.com/Nachovn114">Ignacio Valeria</a></sub>
 </div> 
