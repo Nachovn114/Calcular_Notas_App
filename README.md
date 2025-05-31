@@ -84,21 +84,21 @@ flutter run
   <table>
     <tr align="center">
       <td width="33%">
-        <img src="https://storage.googleapis.com/cms-storage-bucket/6a07d8a62f4308d2b854.svg" width="120" alt="Flutter"/>
+        <img src="https://cdn.worldvectorlogo.com/logos/flutter.svg" width="120" alt="Flutter"/>
         <br>
         <strong>Flutter 3.2.3</strong>
         <br>
         <sub>Framework de UI</sub>
       </td>
       <td width="33%">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" width="120" alt="Dart"/>
+        <img src="https://cdn.worldvectorlogo.com/logos/dart.svg" width="120" alt="Dart"/>
         <br>
         <strong>Dart</strong>
         <br>
         <sub>Lenguaje de programación</sub>
       </td>
       <td width="33%">
-        <img src="https://raw.githubusercontent.com/rrousselGit/provider/master/resources/flutter_favorite.png" width="120" alt="Provider"/>
+        <img src="https://cdn.worldvectorlogo.com/logos/provider.svg" width="120" alt="Provider"/>
         <br>
         <strong>Provider</strong>
         <br>
@@ -107,21 +107,21 @@ flutter run
     </tr>
     <tr align="center">
       <td>
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg" width="120" alt="Material Design"/>
+        <img src="https://cdn.worldvectorlogo.com/logos/material-ui-1.svg" width="120" alt="Material Design"/>
         <br>
         <strong>Material Design 3</strong>
         <br>
         <sub>Sistema de diseño</sub>
       </td>
       <td>
-        <img src="https://raw.githubusercontent.com/imaNNeoFighT/fl_chart/master/repo_files/images/fl_chart_logo_small.png" width="120" alt="FL Chart"/>
+        <img src="https://cdn.worldvectorlogo.com/logos/chart-js.svg" width="120" alt="FL Chart"/>
         <br>
         <strong>FL Chart</strong>
         <br>
         <sub>Visualización de datos</sub>
       </td>
       <td>
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg" width="120" alt="Firebase"/>
+        <img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" width="120" alt="Firebase"/>
         <br>
         <strong>Firebase</strong>
         <br>
