@@ -1,176 +1,73 @@
 # 📚 Calculadora de Notas
 
-Una aplicación móvil desarrollada con Flutter para ayudar a estudiantes a gestionar y calcular sus notas académicas.
+[![Flutter CI](https://github.com/Nachovn114/Calcular_Notas_App/actions/workflows/flutter-ci.yml/badge.svg)](https://github.com/Nachovn114/Calcular_Notas_App/actions/workflows/flutter-ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Flutter](https://img.shields.io/badge/Flutter-3.2.3-blue.svg)](https://flutter.dev)
+[![Stars](https://img.shields.io/github/stars/Nachovn114/Calcular_Notas_App?style=social)](https://github.com/Nachovn114/Calcular_Notas_App/stargazers)
 
-## ✨ Características
+<div align="center">
+  <img src="assets/screenshots/dashboard.jpg" width="250" alt="Dashboard de la aplicación">
+  <br>
+  <i>Una aplicación móvil moderna para gestionar y calcular notas académicas</i>
+</div>
 
-### 📊 Dashboard
-- Vista general del rendimiento académico
-- Promedio general con indicador visual
-- Visualización de mejor y peor asignatura
-- Gráfico de rendimiento por categorías
-- Interfaz limpia y moderna
+## ✨ Características Principales
 
-### 📝 Gestión de Asignaturas
-- Agregar, editar y eliminar asignaturas
-- Registro de notas por asignatura
-- Cálculo automático de promedios
-- Seguimiento del progreso por asignatura
+🎯 **Gestión Académica Completa**
+- Dashboard interactivo con visualización de rendimiento
+- Cálculo automático de promedios y estadísticas
+- Seguimiento detallado por asignatura
 
-### 📈 Análisis Académico
-- Estadísticas detalladas del rendimiento
-- Gráfico de barras comparativo
-- Identificación de fortalezas y áreas de mejora
+🎨 **Diseño Moderno**
+- Interfaz limpia y profesional
+- Tema claro/oscuro
+- Diseño responsive
+
+📊 **Análisis Avanzado**
+- Gráficos de rendimiento
+- Estadísticas detalladas
 - Recomendaciones personalizadas
-- Cálculo de nota necesaria para aprobar (examen transversal 40%)
-
-### 👤 Perfil y Configuración
-
-La aplicación ofrece una interfaz limpia y sencilla para gestionar tu perfil y preferencias:
-
-#### Características principales:
-
-- **Perfil de Usuario**
-  - Información básica del estudiante
-  - Identificación del nivel académico
-  - Avatar personalizable
-  - Estado académico actual
-
-- **Preferencias de Aplicación**
-  - Activación/desactivación de notificaciones
-  - Cambio entre tema claro y oscuro
-  - Configuración de respaldo automático
-  - Navegación intuitiva con iconos descriptivos
-
-- **Soporte y Ayuda**
-  - Acceso a la guía de ayuda
-  - Información "Acerca de" la aplicación
-  - Opción para reiniciar el tutorial
-  - Centro de soporte integrado
-
-- **Seguridad**
-  - Opción de cerrar sesión
-  - Gestión de datos personales
-  - Control de privacidad
-  - Respaldo seguro de información
-
-### 🎯 Onboarding
-- Tutorial interactivo de 3 pasos
-- Introducción a las funcionalidades principales
-- Diseño moderno con iconografía intuitiva
-- Opción para saltar o reiniciar el tutorial
-
-### 📚 Gestión de Asignaturas
-
-La aplicación permite una gestión completa de tus asignaturas y evaluaciones:
-
-#### Características principales:
-
-- **Vista general de asignaturas**
-  - Lista ordenada de todas tus asignaturas
-  - Promedio actual y progreso por asignatura
-  - Indicador visual del rendimiento (código de colores)
-  - Número de evaluaciones registradas
-  - Notas de exámenes transversales cuando aplican
-
-- **Creación de asignaturas**
-  - Nombre personalizado
-  - Definición de nota mínima deseada
-  - Sistema de escala 1.0 - 7.0
-
-- **Gestión de evaluaciones**
-  - Registro detallado de cada evaluación
-  - Sistema de ponderaciones flexible
-  - Cálculo automático de promedios
-  - Opciones de edición y eliminación
-  - Control del peso disponible restante
-
-## 🛠️ Tecnologías Utilizadas
-
-- Flutter
-- Provider (Gestión de estado)
-- SharedPreferences (Persistencia local)
-- FL Chart (Visualización de datos)
-- Google Fonts
-- Material Design 3
-
-## 📱 Capturas de Pantalla
-
-### 🎯 Tutorial de Bienvenida
-<div align="center">
-  <img src="assets/screenshots/onboarding_1.jpg" width="250" alt="¡Calcula tus notas fácilmente!">
-  <img src="assets/screenshots/onboarding_2.jpg" width="250" alt="Visualiza tu progreso">
-  <img src="assets/screenshots/onboarding_3.jpg" width="250" alt="Empieza a mejorar tu rendimiento">
-</div>
-
-### 📊 Dashboard y Análisis
-<div align="center">
-  <img src="assets/screenshots/dashboard.jpg" width="250" alt="Dashboard con promedio global y categorías">
-  <img src="assets/screenshots/analisis.jpg" width="250" alt="Análisis detallado del rendimiento">
-</div>
-
-_Dashboard: Vista general con promedio global (4.6), mejor y peor asignatura, y distribución por categorías._
-
-_Análisis: Estadísticas detalladas con gráfico de rendimiento por asignatura y métricas de progreso._
-
-### 📚 Gestión de Asignaturas
-<div align="center">
-  <img src="assets/screenshots/asignaturas.jpg" width="250" alt="Lista de asignaturas">
-  <img src="assets/screenshots/agregar_asignatura.jpg" width="250" alt="Agregar asignatura">
-  <img src="assets/screenshots/detalle_asignatura.jpg" width="250" alt="Detalle de asignatura">
-  <img src="assets/screenshots/agregar_nota.jpg" width="250" alt="Agregar nota">
-</div>
-
-### 👤 Perfil y Configuración
-<div align="center">
-  <img src="assets/screenshots/perfil.jpg" width="250" alt="Perfil de usuario">
-</div>
-
-_La interfaz ofrece un diseño limpio y moderno, priorizando la usabilidad y la experiencia del usuario._
 
 ## 🚀 Instalación
 
-1. Clona el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/calculadora-notas.git
-```
+# Clonar el repositorio
+git clone https://github.com/Nachovn114/Calcular_Notas_App.git
 
-2. Instala las dependencias:
-```bash
+# Instalar dependencias
 flutter pub get
-```
 
-3. Ejecuta la aplicación:
-```bash
+# Ejecutar la aplicación
 flutter run
 ```
 
-## 📋 Requisitos
+## 📱 Capturas de Pantalla
 
-- Flutter SDK
-- Dart SDK
-- Android Studio / VS Code
-- Dispositivo Android/iOS o emulador
+<div align="center">
+  <img src="assets/screenshots/onboarding_1.jpg" width="200" alt="Tutorial">
+  <img src="assets/screenshots/analisis.jpg" width="200" alt="Análisis">
+  <img src="assets/screenshots/detalle_asignatura.jpg" width="200" alt="Detalle">
+</div>
+
+## 🛠️ Tecnologías
+
+- Flutter 3.2.3
+- Provider (Gestión de estado)
+- FL Chart (Visualización de datos)
+- Material Design 3
 
 ## 🤝 Contribuir
 
-Las contribuciones son bienvenidas. Para cambios importantes:
-
-1. Haz fork del repositorio
-2. Crea una nueva rama
-3. Realiza tus cambios
-4. Envía un pull request
+¡Las contribuciones son bienvenidas! Por favor, lee nuestra [guía de contribución](CONTRIBUTING.md).
 
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
 
-## ✍️ Autor
+## ⭐ ¡Apoya el Proyecto!
 
-Ignacio Valeria/Nachovn114
+Si te gusta este proyecto, ¡déjanos una estrella! ⭐
 
-## 🙏 Agradecimientos
+## 📬 Contacto
 
-- A la comunidad Flutter
-- A todos los contribuidores
-- A los usuarios por su feedback 
+Ignacio Valeria - [@Nachovn114](https://github.com/Nachovn114) 
