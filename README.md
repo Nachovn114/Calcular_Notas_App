@@ -81,17 +81,64 @@ flutter run
 ## 🛠️ Tecnologías Utilizadas
 
 <div align="center">
-  <p align="center">
-    <img src="https://storage.googleapis.com/cms-storage-bucket/6a07d8a62f4308d2b854.svg" width="200" alt="Flutter">
-    <img src="https://dart.dev/assets/img/shared/dart/logo+text/horizontal/white.svg" width="200" alt="Dart">
-    <img src="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-built_white.svg" width="200" alt="Firebase">
-  </p>
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://storage.googleapis.com/cms-storage-bucket/6a07d8a62f4308d2b854.svg" width="100" alt="Flutter"/>
+        <br>
+        <strong>Flutter 3.2.3</strong>
+        <br>
+        Framework de UI
+      </td>
+      <td align="center">
+        <img src="https://dart.dev/assets/img/shared/dart/logo+text/horizontal/white.svg" width="100" alt="Dart"/>
+        <br>
+        <strong>Dart</strong>
+        <br>
+        Lenguaje de programación
+      </td>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/rrousselGit/provider/master/resources/flutter_favorite.png" width="100" alt="Provider"/>
+        <br>
+        <strong>Provider</strong>
+        <br>
+        Gestión de estado
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://user-images.githubusercontent.com/41328571/110234170-fa9b7300-7f3b-11eb-8b14-3f1d17cd3d42.png" width="100" alt="Material Design"/>
+        <br>
+        <strong>Material Design 3</strong>
+        <br>
+        Sistema de diseño
+      </td>
+      <td align="center">
+        <img src="https://www.fluttercharts.dev/fl_chart_logo.svg" width="100" alt="FL Chart"/>
+        <br>
+        <strong>FL Chart</strong>
+        <br>
+        Visualización de datos
+      </td>
+      <td align="center">
+        <img src="https://www.gstatic.com/devrel-devsite/prod/v2c1707f1ecb3b49a47fbec8c0b1cec96cf189c958fe8f54a5cd7a7c68fcd2ddc/firebase/images/lockup.svg" width="100" alt="Firebase"/>
+        <br>
+        <strong>Firebase</strong>
+        <br>
+        Backend y analíticas
+      </td>
+    </tr>
+  </table>
 </div>
 
-- **Flutter 3.2.3** - Framework de UI
-- **Provider** - Gestión de estado
-- **FL Chart** - Visualización de datos
-- **Material Design 3** - Sistema de diseño
+### Características principales:
+
+- **Framework moderno** - Desarrollado con Flutter 3.2.3
+- **Arquitectura robusta** - Patrón Provider para gestión de estado
+- **Visualización avanzada** - Gráficos interactivos con FL Chart
+- **Diseño atractivo** - Material Design 3 con temas personalizados
+- **Backend escalable** - Integración con Firebase
+- **Código optimizado** - Dart con las mejores prácticas
 
 ## 📬 Contacto y Redes Sociales
 
