@@ -1,17 +1,15 @@
 <div align="center">
-  
-# 📚 Calculadora de Notas
 
-<img src="assets/banner.png" alt="Banner de Calculadora de Notas" width="100%">
+# 📱 Calculadora de Notas
+
+![Banner](https://raw.githubusercontent.com/Nachovn114/Calcular_Notas_App/main/assets/images/banner.png)
 
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Nachovn114/Calcular_Notas_App/flutter-ci.yml?label=CI&logo=github)](https://github.com/Nachovn114/Calcular_Notas_App/actions/workflows/flutter-ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?logo=opensource)](https://opensource.org/licenses/MIT)
 [![Flutter Version](https://img.shields.io/badge/Flutter-3.2.3-blue?logo=flutter)](https://flutter.dev)
 [![GitHub stars](https://img.shields.io/github/stars/Nachovn114/Calcular_Notas_App?style=social&logo=github)](https://github.com/Nachovn114/Calcular_Notas_App/stargazers)
 
----
-
-### 🎯 La forma más inteligente de gestionar tus notas académicas
+## 🎯 La forma más inteligente de gestionar tus notas académicas
 
 Una aplicación móvil moderna que revoluciona la manera de calcular y gestionar tus calificaciones. Diseñada con Flutter y Material Design 3 para ofrecer la mejor experiencia de usuario.
 
@@ -22,7 +20,7 @@ Una aplicación móvil moderna que revoluciona la manera de calcular y gestionar
 ## ✨ Características Destacadas
 
 <div align="center">
-  <img src="assets/screenshots/features.png" alt="Características principales" width="100%">
+<img src="https://raw.githubusercontent.com/Nachovn114/Calcular_Notas_App/main/assets/images/features.png" alt="Características principales">
 </div>
 
 ### 📊 Dashboard Inteligente
@@ -43,18 +41,18 @@ Una aplicación móvil moderna que revoluciona la manera de calcular y gestionar
 ## 📱 Vista Previa
 
 <div align="center">
-  <table>
-    <tr>
-      <td><img src="assets/screenshots/onboarding_1.jpg" width="200" alt="Tutorial"></td>
-      <td><img src="assets/screenshots/analisis.jpg" width="200" alt="Análisis"></td>
-      <td><img src="assets/screenshots/detalle_asignatura.jpg" width="200" alt="Detalle"></td>
-    </tr>
-    <tr>
-      <td align="center"><b>Onboarding</b></td>
-      <td align="center"><b>Análisis</b></td>
-      <td align="center"><b>Detalles</b></td>
-    </tr>
-  </table>
+<table>
+<tr>
+<td><img src="assets/screenshots/onboarding_1.jpg" width="200" alt="Tutorial"></td>
+<td><img src="assets/screenshots/analisis.jpg" width="200" alt="Análisis"></td>
+<td><img src="assets/screenshots/detalle_asignatura.jpg" width="200" alt="Detalle"></td>
+</tr>
+<tr>
+<td align="center"><b>Onboarding</b></td>
+<td align="center"><b>Análisis</b></td>
+<td align="center"><b>Detalles</b></td>
+</tr>
+</table>
 </div>
 
 ## 🚀 Instalación Rápida
@@ -70,12 +68,14 @@ flutter pub get
 flutter run
 ```
 
-## 🛠️ Tecnologías
+## 🛠️ Tecnologías Utilizadas
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/flutter/website/main/src/_assets/image/flutter-lockup.png" height="50" alt="Flutter">
-  <img src="https://raw.githubusercontent.com/dart-lang/site-shared/master/src/_assets/image/dart/logo+text/horizontal/white.svg" height="50" alt="Dart">
-  <img src="https://material-ui.com/static/logo.png" height="50" alt="Material Design">
+<p float="left">
+  <img src="https://storage.googleapis.com/cms-storage-bucket/6a07d8a62f4308d2b854.svg" width="150" alt="Flutter">
+  <img src="https://raw.githubusercontent.com/dart-lang/site-shared/master/src/_assets/image/dart/logo/64.png" width="50" alt="Dart">
+  <img src="https://miro.medium.com/max/300/1*R4c8lHBHuH5qyqOtZb3h-w.png" width="50" alt="Firebase">
+</p>
 </div>
 
 - **Flutter 3.2.3** - Framework de UI
@@ -113,5 +113,5 @@ Si encuentras útil este proyecto:
 ---
 
 <div align="center">
-  <sub>Construido con ❤️ por <a href="https://github.com/Nachovn114">Ignacio Valeria</a></sub>
+<sub>Construido con ❤️ por <a href="https://github.com/Nachovn114">Ignacio Valeria</a></sub>
 </div> 
