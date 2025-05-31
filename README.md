@@ -2,7 +2,7 @@
 
 # 📱 Calculadora de Notas
 
-<img src="assets/images/banner.png" alt="Banner de Calculadora de Notas" width="800">
+<img src="assets/images/banner.jpg" alt="Banner de Calculadora de Notas" width="100%">
 
 [![CI Status](https://img.shields.io/github/actions/workflow/status/Nachovn114/Calcular_Notas_App/flutter-ci.yml?label=CI&logo=github&style=flat-square)](https://github.com/Nachovn114/Calcular_Notas_App/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
@@ -13,7 +13,7 @@
 
 Una aplicación móvil moderna que revoluciona la manera de calcular y gestionar tus calificaciones. Diseñada con Flutter y Material Design 3 para ofrecer la mejor experiencia de usuario.
 
-<div style="display: flex; justify-content: center; gap: 20px;">
+<div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
   <a href="https://github.com/Nachovn114/Calcular_Notas_App/releases" style="text-decoration: none;">
     📥 Descargar App
   </a>
@@ -30,7 +30,7 @@ Una aplicación móvil moderna que revoluciona la manera de calcular y gestionar
 ## ✨ Características Destacadas
 
 <div align="center">
-  <img src="assets/images/features.png" alt="Características principales" width="800">
+  <img src="assets/images/features.jpg" alt="Características principales" width="100%">
 </div>
 
 ### 📊 Dashboard Inteligente

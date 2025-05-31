@@ -1,0 +1,27 @@
+{
+  "name": "calcular_notas_app",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">",
+  "main": "capture.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nachovn114/Calcular_Notas_App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nachovn114/Calcular_Notas_App/issues"
+  },
+  "homepage": "https://github.com/Nachovn114/Calcular_Notas_App#readme",
+  "dependencies": {
+    "puppeteer": "^24.9.0"
+  }
+}

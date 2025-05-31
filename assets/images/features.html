@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            width: 1200px;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            perspective: 1000px;
+        }
+
+        .feature-card {
+            width: 350px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            transform-style: preserve-3d;
+            transform: translateZ(0);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px) rotateX(5deg);
+            box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+        }
+
+        .feature-card:nth-child(1)::before {
+            background: linear-gradient(to right, #2196F3, #1976D2);
+        }
+
+        .feature-card:nth-child(2)::before {
+            background: linear-gradient(to right, #673AB7, #4527A0);
+        }
+
+        .feature-card:nth-child(3)::before {
+            background: linear-gradient(to right, #4CAF50, #388E3C);
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 25px;
+            box-shadow: 
+                -8px -8px 12px rgba(255,255,255,0.8),
+                8px 8px 12px rgba(0,0,0,0.1);
+            transform: translateZ(20px);
+        }
+
+        .feature-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #1a237e;
+            position: relative;
+            transform: translateZ(15px);
+        }
+
+        .feature-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: currentColor;
+            transition: width 0.3s ease;
+        }
+
+        .feature-card:hover .feature-title::after {
+            width: 100px;
+        }
+
+        .feature-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            transform: translateZ(10px);
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            transform: translateZ(5px);
+        }
+
+        .feature-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-list li:hover {
+            transform: translateX(5px);
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+            background: linear-gradient(45deg, #4CAF50, #81C784);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .decorative-shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover .decorative-shape {
+            transform: scale(1.2);
+        }
+
+        .shape-1 {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(45deg, #2196F3, #90CAF9);
+            top: -20px;
+            right: -20px;
+        }
+
+        .shape-2 {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, #673AB7, #9575CD);
+            bottom: -10px;
+            left: -10px;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .glow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .feature-card:hover .glow {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3 class="feature-title">Dashboard Inteligente</h3>
+            <p class="feature-description">Visualiza y analiza tu rendimiento académico en tiempo real.</p>
+            <ul class="feature-list">
+                <li>Análisis en tiempo real</li>
+                <li>Predicciones inteligentes</li>
+                <li>Gráficos interactivos</li>
+            </ul>
+            <div class="decorative-shape shape-1"></div>
+            <div class="decorative-shape shape-2"></div>
+            <div class="glow"></div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <h3 class="feature-title">Diseño Premium</h3>
+            <p class="feature-description">Una interfaz moderna y elegante diseñada para la mejor experiencia.</p>
+            <ul class="feature-list">
+                <li>Tema claro/oscuro</li>
+                <li>Interfaz minimalista</li>
+                <li>Animaciones fluidas</li>
+            </ul>
+            <div class="decorative-shape shape-1"></div>
+            <div class="decorative-shape shape-2"></div>
+            <div class="glow"></div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3 class="feature-title">Seguridad Total</h3>
+            <p class="feature-description">Tus datos siempre seguros y bajo tu control.</p>
+            <ul class="feature-list">
+                <li>Almacenamiento local</li>
+                <li>Sin registro requerido</li>
+                <li>Privacidad garantizada</li>
+            </ul>
+            <div class="decorative-shape shape-1"></div>
+            <div class="decorative-shape shape-2"></div>
+            <div class="glow"></div>
+        </div>
+    </div>
+</body>
+</html> 
