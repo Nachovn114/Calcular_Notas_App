@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📱 Calculadora de Notas Comunidad
+    url: https://github.com/Nachovn114/Calcular_Notas_App/discussions
+    about: Por favor haz preguntas generales y discute ideas aquí.
+  - name: 📝 Documentación
+    url: https://github.com/Nachovn114/Calcular_Notas_App/wiki
+    about: Asegúrate de revisar nuestra documentación primero. 
