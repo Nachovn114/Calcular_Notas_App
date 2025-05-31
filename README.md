@@ -1,9 +1,9 @@
 # 📚 Calculadora de Notas
 
-[![Flutter CI](https://github.com/Nachovn114/Calcular_Notas_App/actions/workflows/flutter-ci.yml/badge.svg)](https://github.com/Nachovn114/Calcular_Notas_App/actions/workflows/flutter-ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Flutter](https://img.shields.io/badge/Flutter-3.2.3-blue.svg)](https://flutter.dev)
-[![Stars](https://img.shields.io/github/stars/Nachovn114/Calcular_Notas_App?style=social)](https://github.com/Nachovn114/Calcular_Notas_App/stargazers)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Nachovn114/Calcular_Notas_App/flutter-ci.yml?label=CI&logo=github)](https://github.com/Nachovn114/Calcular_Notas_App/actions/workflows/flutter-ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?logo=opensource)](https://opensource.org/licenses/MIT)
+[![Flutter Version](https://img.shields.io/badge/Flutter-3.2.3-blue?logo=flutter)](https://flutter.dev)
+[![GitHub stars](https://img.shields.io/github/stars/Nachovn114/Calcular_Notas_App?style=social&logo=github)](https://github.com/Nachovn114/Calcular_Notas_App/stargazers)
 
 <div align="center">
   <img src="assets/screenshots/dashboard.jpg" width="250" alt="Dashboard de la aplicación">
