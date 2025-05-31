@@ -1,10 +1,15 @@
 # Archivos de configuración de GitHub
-.github/* linguist-documentation
-.github/ISSUE_TEMPLATE/* linguist-documentation
+.github/** linguist-vendored
+.github/ISSUE_TEMPLATE/** linguist-vendored
+.github/ISSUE_TEMPLATE/bug_report.md linguist-vendored
+.github/ISSUE_TEMPLATE/feature_request.md linguist-vendored
+.github/ISSUE_TEMPLATE/config.yml linguist-vendored
 
 # Archivos de documentación
 *.md linguist-documentation
 LICENSE linguist-documentation
+CONTRIBUTING.md linguist-documentation
+RELEASE_NOTES.md linguist-documentation
 
 # Detectar lenguajes correctamente
 *.dart linguist-language=Dart
@@ -14,4 +19,25 @@ LICENSE linguist-documentation
 # Ignorar archivos generados en estadísticas
 build/** -linguist-documentation
 .dart_tool/** -linguist-documentation
-.idea/** -linguist-documentation 
+.idea/** -linguist-documentation
+
+# Tratar ciertos archivos como binarios
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.flv binary
+*.fla binary
+*.swf binary
+*.gz binary
+*.zip binary
+*.7z binary
+*.ttf binary
+*.eot binary
+*.woff binary
+*.pyc binary
+*.pdf binary 

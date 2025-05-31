@@ -171,7 +171,9 @@ pubspec.lock
 *.ipa
 *.app
 
-# Excluir todos los archivos .github excepto las plantillas de issues
-!.github/
+# Excluir todo en .github excepto las plantillas de issues
 .github/*
 !.github/ISSUE_TEMPLATE/
+!.github/ISSUE_TEMPLATE/bug_report.md
+!.github/ISSUE_TEMPLATE/feature_request.md
+!.github/ISSUE_TEMPLATE/config.yml
