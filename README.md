@@ -68,6 +68,26 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 Si te gusta este proyecto, ¡déjanos una estrella! ⭐
 
-## 📬 Contacto
+## 📬 Contacto y Redes Sociales
 
-Ignacio Valeria - [@Nachovn114](https://github.com/Nachovn114) 
+¿Tienes preguntas, sugerencias o te gustaría colaborar? ¡No dudes en contactarme!
+
+[![GitHub](https://img.shields.io/badge/GitHub-Nachovn114-181717?style=for-the-badge&logo=github)](https://github.com/Nachovn114)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ignacio_Valeria-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ignacio-valeria)
+[![Email](https://img.shields.io/badge/Email-Contacto-D14836?style=for-the-badge&logo=gmail)](mailto:ignacio.valeria@example.com)
+
+### 💬 Otros Canales
+
+- 🐛 [Reportar un Bug](https://github.com/Nachovn114/Calcular_Notas_App/issues/new?template=bug_report.md)
+- 💡 [Sugerir una Característica](https://github.com/Nachovn114/Calcular_Notas_App/issues/new?template=feature_request.md)
+- 🤝 [Guía de Contribución](CONTRIBUTING.md)
+- 🔒 [Política de Seguridad](SECURITY.md)
+
+### 🌟 Apoya el Proyecto
+
+Si encuentras útil este proyecto:
+
+- ⭐ Dale una estrella en GitHub
+- 🔄 Comparte con otros estudiantes
+- 📝 Deja tu feedback en las issues
+- 🤝 Contribuye con código o documentación 
