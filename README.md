@@ -54,15 +54,6 @@ La aplicación ofrece una interfaz limpia y sencilla para gestionar tu perfil y 
   - Control de privacidad
   - Respaldo seguro de información
 
-#### Capturas de pantalla:
-
-<div align="center">
-  <img src="assets/screenshots/profile_light.jpg" width="250" alt="Perfil en tema claro">
-  <img src="assets/screenshots/profile_dark.jpg" width="250" alt="Perfil en tema oscuro">
-</div>
-
-_La sección de perfil muestra un diseño adaptativo con soporte para tema claro y oscuro, ofreciendo una experiencia de usuario consistente y accesible._
-
 ### 🎯 Onboarding
 - Tutorial interactivo de 3 pasos
 - Introducción a las funcionalidades principales
@@ -93,13 +84,6 @@ La aplicación permite una gestión completa de tus asignaturas y evaluaciones:
   - Cálculo automático de promedios
   - Opciones de edición y eliminación
   - Control del peso disponible restante
-
-#### Capturas de pantalla:
-
-![Lista de Asignaturas](assets/screenshots/subjects_list.jpg)
-![Nueva Asignatura](assets/screenshots/new_subject.jpg)
-![Detalle de Asignatura](assets/screenshots/subject_detail.jpg)
-![Nueva Evaluación](assets/screenshots/new_grade.jpg)
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -183,7 +167,7 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ## ✍️ Autor
 
-[Tu nombre/usuario]
+Ignacio Valeria/Nachovn114
 
 ## 🙏 Agradecimientos
 
