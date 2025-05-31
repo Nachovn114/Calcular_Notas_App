@@ -32,6 +32,8 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
+*.lock
+*.g.dart
 
 # Web related
 lib/generated_plugin_registrant.dart
@@ -76,3 +78,24 @@ app.*.map.json
 **/ios/Flutter/flutter_export_environment.sh
 **/ios/ServiceDefinitions.json
 **/ios/Runner/GeneratedPluginRegistrant.*
+
+# macOS
+**/macos/Flutter/GeneratedPluginRegistrant.*
+**/macos/Flutter/ephemeral
+
+# Coverage
+coverage/
+*.lcov
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*~
+
+# Local development
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
