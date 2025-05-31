@@ -84,21 +84,21 @@ flutter run
   <table>
     <tr align="center">
       <td width="33%">
-        <img src="https://cdn.worldvectorlogo.com/logos/flutter.svg" width="120" alt="Flutter"/>
+        <img src="https://docs.flutter.dev/assets/images/shared/brand/flutter/logo/flutter-lockup.png" width="120" alt="Flutter"/>
         <br>
         <strong>Flutter 3.2.3</strong>
         <br>
         <sub>Framework de UI</sub>
       </td>
       <td width="33%">
-        <img src="https://cdn.worldvectorlogo.com/logos/dart.svg" width="120" alt="Dart"/>
+        <img src="https://dart.dev/assets/img/shared/dart/logo+text/horizontal/white.svg" width="120" alt="Dart"/>
         <br>
         <strong>Dart</strong>
         <br>
         <sub>Lenguaje de programación</sub>
       </td>
       <td width="33%">
-        <img src="https://cdn.worldvectorlogo.com/logos/provider.svg" width="120" alt="Provider"/>
+        <img src="https://pub.dev/static/hash-tiahmxgv/img/pub-dev-logo.svg" width="120" alt="Provider"/>
         <br>
         <strong>Provider</strong>
         <br>
@@ -107,21 +107,21 @@ flutter run
     </tr>
     <tr align="center">
       <td>
-        <img src="https://cdn.worldvectorlogo.com/logos/material-ui-1.svg" width="120" alt="Material Design"/>
+        <img src="https://m3.material.io/static/assets/m3-logo.svg" width="120" alt="Material Design"/>
         <br>
         <strong>Material Design 3</strong>
         <br>
         <sub>Sistema de diseño</sub>
       </td>
       <td>
-        <img src="https://cdn.worldvectorlogo.com/logos/chart-js.svg" width="120" alt="FL Chart"/>
+        <img src="https://pub.dev/static/hash-tiahmxgv/img/pub-dev-logo.svg" width="120" alt="FL Chart"/>
         <br>
         <strong>FL Chart</strong>
         <br>
         <sub>Visualización de datos</sub>
       </td>
       <td>
-        <img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" width="120" alt="Firebase"/>
+        <img src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png" width="120" alt="Firebase"/>
         <br>
         <strong>Firebase</strong>
         <br>
