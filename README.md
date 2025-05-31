@@ -129,18 +129,20 @@ _Dashboard: Vista general con promedio global (4.6), mejor y peor asignatura, y 
 
 _Análisis: Estadísticas detalladas con gráfico de rendimiento por asignatura y métricas de progreso._
 
-### Gestión de Asignaturas
+### 📚 Gestión de Asignaturas
 <div align="center">
-  <img src="assets/screenshots/asignaturas.png" width="200" alt="Lista de asignaturas">
-  <img src="assets/screenshots/agregar_asignatura.png" width="200" alt="Agregar asignatura">
-  <img src="assets/screenshots/detalle_asignatura.png" width="200" alt="Detalle de asignatura">
+  <img src="assets/screenshots/asignaturas.jpg" width="250" alt="Lista de asignaturas">
+  <img src="assets/screenshots/agregar_asignatura.jpg" width="250" alt="Agregar asignatura">
+  <img src="assets/screenshots/detalle_asignatura.jpg" width="250" alt="Detalle de asignatura">
+  <img src="assets/screenshots/agregar_nota.jpg" width="250" alt="Agregar nota">
 </div>
 
-### Perfil y Configuración
+### 👤 Perfil y Configuración
 <div align="center">
-  <img src="assets/screenshots/perfil.png" width="200" alt="Perfil de usuario">
-  <img src="assets/screenshots/configuracion.png" width="200" alt="Configuración">
+  <img src="assets/screenshots/perfil.jpg" width="250" alt="Perfil de usuario">
 </div>
+
+_La interfaz ofrece un diseño limpio y moderno, priorizando la usabilidad y la experiencia del usuario._
 
 ## 🚀 Instalación
 
