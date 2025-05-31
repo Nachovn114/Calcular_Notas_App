@@ -1,29 +1,28 @@
-<div align="center">
-
 # 📱 Calculadora de Notas
+
+<div align="center">
 
 <img src="assets/images/banner.jpg" alt="Banner de Calculadora de Notas" width="100%">
 
-[![CI Status](https://img.shields.io/github/actions/workflow/status/Nachovn114/Calcular_Notas_App/flutter-ci.yml?label=CI&logo=github&style=flat-square)](https://github.com/Nachovn114/Calcular_Notas_App/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Flutter](https://img.shields.io/badge/Flutter-3.2.3-blue?logo=flutter&style=flat-square)](https://flutter.dev)
 [![Stars](https://img.shields.io/github/stars/Nachovn114/Calcular_Notas_App?style=flat-square)](https://github.com/Nachovn114/Calcular_Notas_App/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/Nachovn114/Calcular_Notas_App?style=flat-square)](https://github.com/Nachovn114/Calcular_Notas_App/commits/main)
+[![Downloads](https://img.shields.io/github/downloads/Nachovn114/Calcular_Notas_App/total?style=flat-square)](https://github.com/Nachovn114/Calcular_Notas_App/releases)
 
-## 🎯 La forma más inteligente de gestionar tus notas académicas
+<p align="center">
+  <b>La forma más inteligente de gestionar tus calificaciones académicas</b>
+  <br>
+  Una aplicación moderna y elegante diseñada para estudiantes que buscan la excelencia
+</p>
 
-Una aplicación móvil moderna que revoluciona la manera de calcular y gestionar tus calificaciones. Diseñada con Flutter y Material Design 3 para ofrecer la mejor experiencia de usuario.
-
-<div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
-  <a href="https://github.com/Nachovn114/Calcular_Notas_App/releases" style="text-decoration: none;">
-    📥 Descargar App
-  </a>
-  <a href="https://github.com/Nachovn114/Calcular_Notas_App/wiki" style="text-decoration: none;">
-    📖 Documentación
-  </a>
-  <a href="https://github.com/Nachovn114/Calcular_Notas_App/issues" style="text-decoration: none;">
-    🐛 Reportar Bug
-  </a>
-</div>
+<p align="center">
+  <a href="#-características-destacadas">Características</a> •
+  <a href="#-vista-previa">Vista Previa</a> •
+  <a href="#%EF%B8%8F-tecnologías-utilizadas">Tecnologías</a> •
+  <a href="#-instalación-rápida">Instalación</a> •
+  <a href="#-contacto-y-redes-sociales">Contacto</a>
+</p>
 
 </div>
 
@@ -33,34 +32,41 @@ Una aplicación móvil moderna que revoluciona la manera de calcular y gestionar
   <img src="assets/images/features.jpg" alt="Características principales" width="100%">
 </div>
 
-### 📊 Dashboard Inteligente
-- **Visualización en Tiempo Real** de tu rendimiento académico
-- **Análisis Predictivo** de tus calificaciones futuras
-- **Gráficos Interactivos** para mejor comprensión
+### 🎯 Funcionalidades Principales
 
-### 🎨 Diseño Premium
-- **Tema Claro/Oscuro** automático
-- **Interfaz Minimalista** y moderna
-- **Animaciones Fluidas** para mejor experiencia
+- 📊 **Dashboard Inteligente**
+  - Visualización en tiempo real de tu rendimiento
+  - Análisis predictivo de calificaciones
+  - Gráficos interactivos personalizables
 
-### 🔒 Seguridad y Privacidad
-- **Almacenamiento Local** seguro
-- **Sin Registro Requerido**
-- **Datos Privados** siempre en tu control
+- 🎨 **Diseño Premium**
+  - Tema claro/oscuro automático
+  - Interfaz minimalista y moderna
+  - Animaciones fluidas y elegantes
+
+- 🔒 **Seguridad y Privacidad**
+  - Almacenamiento local seguro
+  - Sin registro requerido
+  - Datos siempre bajo tu control
+
+- 📱 **Experiencia Optimizada**
+  - Interfaz adaptativa
+  - Rendimiento excepcional
+  - Actualizaciones regulares
 
 ## 📱 Vista Previa
 
 <div align="center">
   <table>
     <tr>
-      <td><img src="assets/screenshots/onboarding_1.jpg" width="250" alt="Tutorial"></td>
-      <td><img src="assets/screenshots/analisis.jpg" width="250" alt="Análisis"></td>
-      <td><img src="assets/screenshots/detalle_asignatura.jpg" width="250" alt="Detalle"></td>
+      <td><img src="assets/screenshots/onboarding_1.jpg" width="250" alt="Tutorial"/></td>
+      <td><img src="assets/screenshots/analisis.jpg" width="250" alt="Análisis"/></td>
+      <td><img src="assets/screenshots/detalle_asignatura.jpg" width="250" alt="Detalle"/></td>
     </tr>
     <tr>
-      <td align="center"><b>Onboarding</b></td>
-      <td align="center"><b>Análisis</b></td>
-      <td align="center"><b>Detalles</b></td>
+      <td align="center"><b>Onboarding Intuitivo</b></td>
+      <td align="center"><b>Análisis Detallado</b></td>
+      <td align="center"><b>Gestión Avanzada</b></td>
     </tr>
   </table>
 </div>
@@ -70,6 +76,9 @@ Una aplicación móvil moderna que revoluciona la manera de calcular y gestionar
 ```bash
 # Clonar el repositorio
 git clone https://github.com/Nachovn114/Calcular_Notas_App.git
+
+# Navegar al directorio
+cd Calcular_Notas_App
 
 # Instalar dependencias
 flutter pub get
@@ -131,39 +140,31 @@ flutter run
   </table>
 </div>
 
-### ⚡ Características principales:
-
-- **Framework moderno** - Desarrollado con Flutter 3.2.3
-- **Arquitectura robusta** - Patrón Provider para gestión de estado
-- **Visualización avanzada** - Gráficos interactivos con FL Chart
-- **Diseño atractivo** - Material Design 3 con temas personalizados
-- **Backend escalable** - Integración con Firebase
-- **Código optimizado** - Dart con las mejores prácticas
-
 ## 📬 Contacto y Redes Sociales
 
-¿Tienes preguntas, sugerencias o te gustaría colaborar? ¡No dudes en contactarme!
+<div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-Nachovn114-181717?style=for-the-badge&logo=github)](https://github.com/Nachovn114)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ignacio_Valeria-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ignacio-valeria)
 [![Gmail](https://img.shields.io/badge/Gmail-ignaciovn11-D14836?style=for-the-badge&logo=gmail)](https://mail.google.com/mail/?view=cm&fs=1&to=ignaciovn11@gmail.com)
 
+</div>
+
 ## ⭐ ¡Apoya el Proyecto!
-
-Si encuentras útil este proyecto:
-
-- ⭐ Dale una estrella
-- 🔄 Comparte con otros estudiantes
-- 📝 Deja tu feedback
-- 🤝 Contribuye al desarrollo
 
 <div align="center">
 
+Si encuentras útil este proyecto, ¡apóyalo!
+
+[![GitHub stars](https://img.shields.io/github/stars/Nachovn114/Calcular_Notas_App?style=social)](https://github.com/Nachovn114/Calcular_Notas_App/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Nachovn114/Calcular_Notas_App?style=social)](https://github.com/Nachovn114/Calcular_Notas_App/network/members)
+[![GitHub watchers](https://img.shields.io/github/watchers/Nachovn114/Calcular_Notas_App?style=social)](https://github.com/Nachovn114/Calcular_Notas_App/watchers)
+
 ### 📊 Estadísticas del Proyecto
 
-[![Contributors](https://img.shields.io/github/contributors/Nachovn114/Calcular_Notas_App?style=for-the-badge)](https://github.com/Nachovn114/Calcular_Notas_App/graphs/contributors)
 [![Issues](https://img.shields.io/github/issues/Nachovn114/Calcular_Notas_App?style=for-the-badge)](https://github.com/Nachovn114/Calcular_Notas_App/issues)
-[![PRs](https://img.shields.io/github/issues-pr/Nachovn114/Calcular_Notas_App?style=for-the-badge)](https://github.com/Nachovn114/Calcular_Notas_App/pulls)
+[![Pull Requests](https://img.shields.io/github/issues-pr/Nachovn114/Calcular_Notas_App?style=for-the-badge)](https://github.com/Nachovn114/Calcular_Notas_App/pulls)
+[![Contributors](https://img.shields.io/github/contributors/Nachovn114/Calcular_Notas_App?style=for-the-badge)](https://github.com/Nachovn114/Calcular_Notas_App/graphs/contributors)
 
 </div>
 
@@ -171,4 +172,6 @@ Si encuentras útil este proyecto:
 
 <div align="center">
   <sub>Construido con ❤️ por <a href="https://github.com/Nachovn114">Ignacio Valeria</a></sub>
+  <br>
+  <sub>¿Te gusta mi trabajo? ¡Considera darle una ⭐!</sub>
 </div> 
