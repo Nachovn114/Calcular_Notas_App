@@ -8,7 +8,7 @@ plugins {
 android {
     namespace = "com.example.calculadora_notas"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973" // Actualiza aquí
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

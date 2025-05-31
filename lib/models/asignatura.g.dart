@@ -3,48 +3,22 @@
 part of 'asignatura.dart';
 
 // **************************************************************************
-// TypeAdapterGenerator
+// JsonSerializableGenerator
 // **************************************************************************
 
-class AsignaturaAdapter extends TypeAdapter<Asignatura> {
-  @override
-  final int typeId = 0;
+Asignatura _$AsignaturaFromJson(Map<String, dynamic> json) => Asignatura(
+      id: json['id'] as String,
+      nombre: json['nombre'] as String,
+      notas: (json['notas'] as List<dynamic>?)
+          ?.map((e) => Nota.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      notaDeseada: (json['notaDeseada'] as num?)?.toDouble() ?? 4.0,
+    );
 
-  @override
-  Asignatura read(BinaryReader reader) {
-    final numOfFields = reader.readByte();
-    final fields = <int, dynamic>{
-      for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
+Map<String, dynamic> _$AsignaturaToJson(Asignatura instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'nombre': instance.nombre,
+      'notas': instance.notas,
+      'notaDeseada': instance.notaDeseada,
     };
-    return Asignatura(
-      nombre: fields[0] as String,
-      notas: (fields[1] as List?)?.cast<Nota>(),
-    )
-      ..promedioActual = fields[2] as double
-      ..ponderacionAcumulada = fields[3] as double;
-  }
-
-  @override
-  void write(BinaryWriter writer, Asignatura obj) {
-    writer
-      ..writeByte(4)
-      ..writeByte(0)
-      ..write(obj.nombre)
-      ..writeByte(1)
-      ..write(obj.notas)
-      ..writeByte(2)
-      ..write(obj.promedioActual)
-      ..writeByte(3)
-      ..write(obj.ponderacionAcumulada);
-  }
-
-  @override
-  int get hashCode => typeId.hashCode;
-
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is AsignaturaAdapter &&
-          runtimeType == other.runtimeType &&
-          typeId == other.typeId;
-}

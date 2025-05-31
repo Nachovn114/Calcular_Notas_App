@@ -1,5 +1,5 @@
 name: calcular_notas_app
-description: "Aplicación para calcular notas y promedios universitarios"
+description: "Una aplicación para calcular notas y promedios académicos."
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -11,20 +11,18 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   google_fonts: ^6.1.0
+  json_annotation: ^4.8.1
   provider: ^6.1.1
-  hive: ^2.2.3
-  hive_flutter: ^1.1.0
+  uuid: ^4.2.1
   shared_preferences: ^2.2.2
-  flutter_animate: ^4.5.0
-  animated_text_kit: ^4.2.2
+  fl_chart: ^0.66.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
-  hive_generator: ^2.0.1
   build_runner: ^2.4.7
-  analyzer: ^6.11.0
+  json_serializable: ^6.7.1
 
 flutter:
   uses-material-design: true 

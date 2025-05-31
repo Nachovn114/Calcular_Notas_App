@@ -8,10 +8,9 @@ class AppTheme {
   static const EdgeInsets pagePadding = EdgeInsets.all(16.0);
 
   // Colores principales
-  static const Color primaryLight = Color(0xFF6B4EFF);
-  static const Color primaryDark = Color(0xFF8B6FFF);
-  static const Color secondaryLight = Color(0xFF00D1B2);
-  static const Color secondaryDark = Color(0xFF00F7D4);
+  static const Color primaryColor = Color(0xFF4CAF50);
+  static const Color secondaryColor = Color(0xFF2196F3);
+  static const Color backgroundColor = Color(0xFFF5F5F5);
 
   // Colores de estado
   static const Color successLight = Color(0xFF23D160);
@@ -28,177 +27,56 @@ class AppTheme {
   static const Color surfaceDark = Color(0xFF1E1E1E);
 
   // Tema Claro
-  static ThemeData light() {
-    final theme = ThemeData.light(useMaterial3: true);
-    return theme.copyWith(
-      colorScheme: ColorScheme.light(
-        primary: primaryLight,
-        secondary: secondaryLight,
-        surface: surfaceLight,
-        background: backgroundLight,
+  static ThemeData lightTheme = ThemeData(
+    useMaterial3: true,
+    colorScheme: ColorScheme.light(
+      primary: primaryColor,
+      secondary: secondaryColor,
+      background: backgroundColor,
+    ),
+    textTheme: GoogleFonts.poppinsTextTheme(),
+    cardTheme: CardThemeData(
+      elevation: 2,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
       ),
-      scaffoldBackgroundColor: backgroundLight,
-      cardTheme: theme.cardTheme.copyWith(
-        elevation: 2,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(borderRadius),
-        ),
-        margin: const EdgeInsets.symmetric(vertical: 8),
-      ),
-      appBarTheme: theme.appBarTheme.copyWith(
-        elevation: 0,
-        centerTitle: true,
-        backgroundColor: primaryLight,
-        foregroundColor: Colors.white,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(
-            bottom: Radius.circular(borderRadius),
-          ),
-        ),
-      ),
-      inputDecorationTheme: InputDecorationTheme(
-        filled: true,
-        fillColor: Colors.grey[50],
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(borderRadius),
-          borderSide: BorderSide.none,
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(borderRadius),
-          borderSide: BorderSide.none,
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(borderRadius),
-          borderSide: BorderSide(color: primaryLight, width: 2),
-        ),
-        contentPadding: const EdgeInsets.symmetric(
-          horizontal: 16,
-          vertical: 16,
-        ),
-      ),
-      elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: primaryLight,
-          foregroundColor: Colors.white,
-          elevation: 0,
-          padding: const EdgeInsets.symmetric(
-            horizontal: 24,
-            vertical: 16,
-          ),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(borderRadius),
-          ),
-        ),
-      ),
-      textButtonTheme: TextButtonThemeData(
-        style: TextButton.styleFrom(
-          foregroundColor: primaryLight,
-          padding: const EdgeInsets.symmetric(
-            horizontal: 16,
-            vertical: 8,
-          ),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(borderRadius),
-          ),
-        ),
-      ),
-      floatingActionButtonTheme: FloatingActionButtonThemeData(
-        backgroundColor: primaryLight,
-        foregroundColor: Colors.white,
-        elevation: 4,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(borderRadius),
-        ),
-      ),
-    );
-  }
+    ),
+    floatingActionButtonTheme: const FloatingActionButtonThemeData(
+      backgroundColor: primaryColor,
+      foregroundColor: Colors.white,
+    ),
+    appBarTheme: const AppBarTheme(
+      backgroundColor: primaryColor,
+      foregroundColor: Colors.white,
+      elevation: 0,
+    ),
+  );
 
   // Tema Oscuro
-  static ThemeData dark() {
-    final theme = ThemeData.dark(useMaterial3: true);
-    return theme.copyWith(
-      colorScheme: ColorScheme.dark(
-        primary: primaryDark,
-        secondary: secondaryDark,
-        surface: surfaceDark,
-        background: backgroundDark,
+  static ThemeData darkTheme = ThemeData(
+    useMaterial3: true,
+    colorScheme: ColorScheme.dark(
+      primary: primaryColor,
+      secondary: secondaryColor,
+      background: Colors.grey[900]!,
+    ),
+    textTheme: GoogleFonts.poppinsTextTheme(ThemeData.dark().textTheme),
+    cardTheme: CardThemeData(
+      elevation: 2,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
       ),
-      scaffoldBackgroundColor: backgroundDark,
-      cardTheme: theme.cardTheme.copyWith(
-        elevation: 4,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(borderRadius),
-        ),
-        margin: const EdgeInsets.symmetric(vertical: 8),
-        color: surfaceDark,
-      ),
-      appBarTheme: theme.appBarTheme.copyWith(
-        elevation: 0,
-        centerTitle: true,
-        backgroundColor: primaryDark,
-        foregroundColor: Colors.white,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(
-            bottom: Radius.circular(borderRadius),
-          ),
-        ),
-      ),
-      inputDecorationTheme: InputDecorationTheme(
-        filled: true,
-        fillColor: Colors.grey[900],
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(borderRadius),
-          borderSide: BorderSide.none,
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(borderRadius),
-          borderSide: BorderSide.none,
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(borderRadius),
-          borderSide: BorderSide(color: primaryDark, width: 2),
-        ),
-        contentPadding: const EdgeInsets.symmetric(
-          horizontal: 16,
-          vertical: 16,
-        ),
-      ),
-      elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: primaryDark,
-          foregroundColor: Colors.white,
-          elevation: 0,
-          padding: const EdgeInsets.symmetric(
-            horizontal: 24,
-            vertical: 16,
-          ),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(borderRadius),
-          ),
-        ),
-      ),
-      textButtonTheme: TextButtonThemeData(
-        style: TextButton.styleFrom(
-          foregroundColor: primaryDark,
-          padding: const EdgeInsets.symmetric(
-            horizontal: 16,
-            vertical: 8,
-          ),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(borderRadius),
-          ),
-        ),
-      ),
-      floatingActionButtonTheme: FloatingActionButtonThemeData(
-        backgroundColor: primaryDark,
-        foregroundColor: Colors.white,
-        elevation: 4,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(borderRadius),
-        ),
-      ),
-    );
-  }
+    ),
+    floatingActionButtonTheme: const FloatingActionButtonThemeData(
+      backgroundColor: primaryColor,
+      foregroundColor: Colors.white,
+    ),
+    appBarTheme: AppBarTheme(
+      backgroundColor: Colors.grey[900],
+      foregroundColor: Colors.white,
+      elevation: 0,
+    ),
+  );
 
   // Decoraciones comunes
   static BoxDecoration get gradientBackground => const BoxDecoration(

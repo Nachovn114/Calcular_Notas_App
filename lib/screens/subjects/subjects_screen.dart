@@ -1,44 +1,48 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../../config/theme.dart';
 import '../../models/asignatura.dart';
 import '../../providers/asignaturas_provider.dart';
-import '../calculator/calculator_screen.dart';
+import '../analisis/analisis_screen.dart';
 
 class SubjectsScreen extends StatelessWidget {
   const SubjectsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Mis Asignaturas'),
-        flexibleSpace: Container(
-          decoration: AppTheme.gradientBackground,
-        ),
-      ),
-      body: Consumer<AsignaturasProvider>(
-        builder: (context, provider, child) {
-          final asignaturas = provider.asignaturas;
-          return ListView.builder(
-            padding: const EdgeInsets.all(16),
-            itemCount: asignaturas.length,
-            itemBuilder: (context, index) {
-              final asignatura = asignaturas[index];
-              return _SubjectCard(asignatura: asignatura);
-            },
-          );
-        },
-      ),
+    return Consumer<AsignaturasProvider>(
+      builder: (context, provider, child) {
+        final asignaturas = provider.asignaturas;
+        return ListView.builder(
+          padding: const EdgeInsets.all(16),
+          itemCount: asignaturas.length,
+          itemBuilder: (context, index) {
+            final asignatura = asignaturas[index];
+            return _SubjectCard(
+              asignatura: asignatura,
+              onTap: () {
+                provider.seleccionarAsignatura(asignatura);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AnalisisScreen(),
+                  ),
+                );
+              },
+            );
+          },
+        );
+      },
     );
   }
 }
 
 class _SubjectCard extends StatelessWidget {
   final Asignatura asignatura;
+  final VoidCallback onTap;
 
   const _SubjectCard({
     required this.asignatura,
+    required this.onTap,
   });
 
   @override
@@ -46,16 +50,8 @@ class _SubjectCard extends StatelessWidget {
     return Card(
       margin: const EdgeInsets.only(bottom: 16),
       child: InkWell(
-        onTap: () {
-          context.read<AsignaturasProvider>().seleccionarAsignatura(asignatura);
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const CalculatorScreen(),
-            ),
-          );
-        },
-        borderRadius: BorderRadius.circular(AppTheme.borderRadius),
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(16),
         child: Padding(
           padding: const EdgeInsets.all(16),
           child: Column(
@@ -73,13 +69,13 @@ class _SubjectCard extends StatelessWidget {
                   _InfoChip(
                     icon: Icons.grade,
                     label:
-                        'Promedio: ${asignatura.promedioActual.toStringAsFixed(1)}',
+                        'Promedio: ${asignatura.promedio.toStringAsFixed(1)}',
                   ),
                   const SizedBox(width: 8),
                   _InfoChip(
                     icon: Icons.percent,
                     label:
-                        'Ponderación: ${asignatura.ponderacionAcumulada.toStringAsFixed(1)}%',
+                        'Progreso: ${(asignatura.progreso * 100).toStringAsFixed(1)}%',
                   ),
                 ],
               ),
@@ -103,10 +99,10 @@ class _InfoChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(12),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -119,11 +115,10 @@ class _InfoChip extends StatelessWidget {
           const SizedBox(width: 4),
           Text(
             label,
-            style: TextStyle(
-              color: Theme.of(context).colorScheme.primary,
-              fontSize: 12,
-              fontWeight: FontWeight.w500,
-            ),
+            style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                  color: Theme.of(context).colorScheme.primary,
+                  fontWeight: FontWeight.bold,
+                ),
           ),
         ],
       ),

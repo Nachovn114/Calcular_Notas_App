@@ -1,67 +1,119 @@
+import 'dart:convert';
 import 'package:flutter/foundation.dart';
-import 'package:hive_flutter/hive_flutter.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../models/asignatura.dart';
 import '../models/nota.dart';
 
 class AsignaturasProvider with ChangeNotifier {
-  late Box<Asignatura> _box;
+  List<Asignatura> _asignaturas = [];
+  final SharedPreferences _prefs;
+  static const String _key = 'asignaturas';
   Asignatura? _asignaturaSeleccionada;
 
-  AsignaturasProvider() {
-    _initBox();
+  AsignaturasProvider(this._prefs) {
+    _cargarAsignaturas();
   }
 
-  void _initBox() {
-    _box = Hive.box<Asignatura>('asignaturas');
-    if (_box.isEmpty) {
-      // Cargar asignaturas predefinidas
-      for (var asignatura in Asignatura.asignaturasPredefinidas()) {
-        _box.add(asignatura);
-      }
+  List<Asignatura> get asignaturas => List.unmodifiable(_asignaturas);
+  Asignatura? get asignaturaSeleccionada => _asignaturaSeleccionada;
+
+  Asignatura? getAsignatura(String id) {
+    try {
+      return _asignaturas.firstWhere((a) => a.id == id);
+    } catch (e) {
+      return null;
     }
   }
 
-  List<Asignatura> get asignaturas => _box.values.toList();
+  void _cargarAsignaturas() {
+    final String? asignaturasString = _prefs.getString(_key);
+    if (asignaturasString != null) {
+      final List<dynamic> decoded = jsonDecode(asignaturasString);
+      _asignaturas = decoded.map((item) => Asignatura.fromJson(item)).toList();
+      notifyListeners();
+    }
+  }
 
-  Asignatura? get asignaturaSeleccionada => _asignaturaSeleccionada;
+  Future<void> _guardarAsignaturas() async {
+    final String encoded =
+        jsonEncode(_asignaturas.map((a) => a.toJson()).toList());
+    await _prefs.setString(_key, encoded);
+  }
 
-  void seleccionarAsignatura(Asignatura asignatura) {
+  void agregarAsignatura(Asignatura asignatura) {
+    _asignaturas.add(asignatura);
+    _guardarAsignaturas();
+    notifyListeners();
+  }
+
+  void agregarNota(String asignaturaId, Nota nota) {
+    final index = _asignaturas.indexWhere((a) => a.id == asignaturaId);
+    if (index != -1) {
+      final asignatura = _asignaturas[index];
+      final nuevasNotas = List<Nota>.from(asignatura.notas)..add(nota);
+      _asignaturas[index] = Asignatura(
+        id: asignatura.id,
+        nombre: asignatura.nombre,
+        notas: nuevasNotas,
+        notaDeseada: asignatura.notaDeseada,
+      );
+      _guardarAsignaturas();
+      notifyListeners();
+    }
+  }
+
+  void eliminarNota(String asignaturaId, String notaId) {
+    final index = _asignaturas.indexWhere((a) => a.id == asignaturaId);
+    if (index != -1) {
+      final asignatura = _asignaturas[index];
+      final nuevasNotas =
+          asignatura.notas.where((n) => n.id != notaId).toList();
+      _asignaturas[index] = Asignatura(
+        id: asignatura.id,
+        nombre: asignatura.nombre,
+        notas: nuevasNotas,
+        notaDeseada: asignatura.notaDeseada,
+      );
+      _guardarAsignaturas();
+      notifyListeners();
+    }
+  }
+
+  void actualizarAsignatura(Asignatura asignatura) {
+    final index = _asignaturas.indexWhere((a) => a.id == asignatura.id);
+    if (index != -1) {
+      _asignaturas[index] = asignatura;
+      _guardarAsignaturas();
+      notifyListeners();
+    }
+  }
+
+  void eliminarAsignatura(String id) {
+    _asignaturas.removeWhere((a) => a.id == id);
+    _guardarAsignaturas();
+    notifyListeners();
+  }
+
+  void seleccionarAsignatura(Asignatura? asignatura) {
     _asignaturaSeleccionada = asignatura;
     notifyListeners();
   }
 
-  void agregarNota(Nota nota) {
-    if (_asignaturaSeleccionada != null) {
-      _asignaturaSeleccionada!.agregarNota(nota);
-      _asignaturaSeleccionada!.save();
-      notifyListeners();
-    }
+  double get promedioGeneral {
+    if (_asignaturas.isEmpty) return 0.0;
+    final promedios = _asignaturas.map((a) => a.promedio).toList();
+    return promedios.reduce((a, b) => a + b) / promedios.length;
   }
 
-  void eliminarNota(Nota nota) {
-    if (_asignaturaSeleccionada != null) {
-      _asignaturaSeleccionada!.eliminarNota(nota);
-      _asignaturaSeleccionada!.save();
-      notifyListeners();
-    }
-  }
-
-  double calcularNotaNecesaria() {
-    if (_asignaturaSeleccionada == null) {
-      throw Exception('No hay asignatura seleccionada');
-    }
-
-    return _asignaturaSeleccionada!.calcularNotaNecesaria();
-  }
-
-  void limpiarSeleccion() {
-    _asignaturaSeleccionada = null;
-    notifyListeners();
+  double get progresoGeneral {
+    if (_asignaturas.isEmpty) return 0.0;
+    final progresos = _asignaturas.map((a) => a.progreso).toList();
+    return progresos.reduce((a, b) => a + b) / progresos.length;
   }
 
   @override
   void dispose() {
-    _box.close();
+    _guardarAsignaturas();
     super.dispose();
   }
 }

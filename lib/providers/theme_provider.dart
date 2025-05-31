@@ -4,7 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class ThemeProvider with ChangeNotifier {
   static const String _themeKey = 'theme_mode';
   late final SharedPreferences _prefs;
-  late ThemeMode _themeMode;
+  ThemeMode _themeMode = ThemeMode.system;
   bool _isInitialized = false;
 
   ThemeProvider() {
@@ -24,17 +24,19 @@ class ThemeProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  ThemeMode get themeMode => _isInitialized ? _themeMode : ThemeMode.system;
+  ThemeMode get themeMode => _themeMode;
 
   bool get isDarkMode => _themeMode == ThemeMode.dark;
 
   Future<void> setThemeMode(ThemeMode mode) async {
-    if (!_isInitialized || _themeMode == mode) return;
+    if (_themeMode == mode) return;
 
     _themeMode = mode;
     notifyListeners();
 
-    await _prefs.setString(_themeKey, mode.toString());
+    if (_isInitialized) {
+      await _prefs.setString(_themeKey, mode.toString());
+    }
   }
 
   void toggleTheme() {

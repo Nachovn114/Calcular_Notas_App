@@ -1,88 +1,111 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../../models/asignatura.dart';
+import '../../providers/asignaturas_provider.dart';
 import '../../config/theme.dart';
-import '../../providers/theme_provider.dart';
-import '../../widgets/animated_gradient_background.dart';
-import '../../widgets/custom_app_bar.dart';
-import 'widgets/empty_state.dart';
+import '../asignatura/agregar_asignatura_screen.dart';
+import '../asignatura/detalle_asignatura_screen.dart';
+import 'widgets/asignatura_card.dart';
+import 'widgets/estadisticas_widget.dart';
+import 'widgets/resumen_widget.dart';
+import 'widgets/mejor_peor_widget.dart';
+import 'widgets/grafico_categorias_widget.dart';
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen>
-    with SingleTickerProviderStateMixin {
-  late final AnimationController _controller;
-  late final Animation<double> _fadeAnimation;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = AnimationController(
-      duration: const Duration(milliseconds: 800),
-      vsync: this,
-    );
-    _fadeAnimation = CurvedAnimation(
-      parent: _controller,
-      curve: Curves.easeOut,
-    );
-    _controller.forward();
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    final themeProvider = Provider.of<ThemeProvider>(context);
-    final isDark = themeProvider.isDarkMode;
-
     return Scaffold(
-      body: AnimatedGradientBackground(
-        isDark: isDark,
-        child: SafeArea(
-          child: Column(
-            children: [
-              CustomAppBar(
-                title: 'Calculadora de Notas',
-                onThemeToggle: themeProvider.toggleTheme,
-                isDark: isDark,
+      appBar: AppBar(
+        title: const Text('Dashboard'),
+        centerTitle: true,
+      ),
+      body: Consumer<AsignaturasProvider>(
+        builder: (context, provider, child) {
+          final asignaturas = provider.asignaturas;
+          if (asignaturas.isEmpty) {
+            return Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.school_outlined,
+                    size: 64,
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
+                  const SizedBox(height: 16),
+                  Text(
+                    'No hay asignaturas',
+                    style: Theme.of(context).textTheme.titleLarge,
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    'Agrega tu primera asignatura',
+                    style: Theme.of(context).textTheme.bodyMedium,
+                  ),
+                  const SizedBox(height: 24),
+                  FilledButton.icon(
+                    onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const AgregarAsignaturaScreen(),
+                      ),
+                    ),
+                    icon: const Icon(Icons.add),
+                    label: const Text('Agregar Asignatura'),
+                  ),
+                ],
               ),
-              Expanded(
-                child: FadeTransition(
-                  opacity: _fadeAnimation,
-                  child: ListView(
-                    padding: AppTheme.pagePadding,
-                    physics: const BouncingScrollPhysics(),
-                    children: const [
-                      // TODO: Implementar lista de asignaturas con AnimatedList
-                      EmptyState(
-                        message: 'No hay asignaturas registradas',
-                        subMessage:
-                            'Toca el botón + para agregar una asignatura',
+            );
+          }
+
+          final asignaturasConNotas =
+              asignaturas.where((a) => a.notas.isNotEmpty).toList();
+          final mejorAsignatura = asignaturasConNotas.isEmpty
+              ? null
+              : asignaturasConNotas
+                  .reduce((a, b) => a.promedio > b.promedio ? a : b);
+          final peorAsignatura = asignaturasConNotas.isEmpty
+              ? null
+              : asignaturasConNotas
+                  .reduce((a, b) => a.promedio < b.promedio ? a : b);
+
+          return SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                ResumenWidget(asignaturas: asignaturasConNotas),
+                const SizedBox(height: 16),
+                Padding(
+                  padding: AppTheme.pagePadding,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: MejorPeorWidget(
+                          asignatura: mejorAsignatura,
+                          isMejor: true,
+                        ),
+                      ),
+                      const SizedBox(width: 16),
+                      Expanded(
+                        child: MejorPeorWidget(
+                          asignatura: peorAsignatura,
+                          isMejor: false,
+                        ),
                       ),
                     ],
                   ),
                 ),
-              ),
-            ],
-          ),
-        ),
-      ),
-      floatingActionButton: ScaleTransition(
-        scale: _fadeAnimation,
-        child: FloatingActionButton(
-          onPressed: () {
-            // TODO: Implementar agregar asignatura
-          },
-          child: const Icon(Icons.add),
-        ),
+                const SizedBox(height: 16),
+                Padding(
+                  padding: AppTheme.pagePadding,
+                  child: GraficoCategorias(asignaturas: asignaturasConNotas),
+                ),
+              ],
+            ),
+          );
+        },
       ),
     );
   }
