@@ -84,21 +84,21 @@ flutter run
   <table>
     <tr align="center">
       <td width="33%">
-        <img src="https://raw.githubusercontent.com/flutter/website/main/src/_assets/image/flutter-lockup-bg.jpg" width="120" alt="Flutter"/>
+        <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" width="120" alt="Flutter"/>
         <br>
         <strong>Flutter 3.2.3</strong>
         <br>
         <sub>Framework de UI</sub>
       </td>
       <td width="33%">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" width="120" alt="Dart"/>
+        <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" width="120" alt="Dart"/>
         <br>
         <strong>Dart</strong>
         <br>
         <sub>Lenguaje de programación</sub>
       </td>
       <td width="33%">
-        <img src="https://raw.githubusercontent.com/rrousselGit/provider/master/resources/flutter_favorite.png" width="120" alt="Provider"/>
+        <img src="https://img.shields.io/badge/Provider-4CAF50?style=for-the-badge&logo=flutter&logoColor=white" width="120" alt="Provider"/>
         <br>
         <strong>Provider</strong>
         <br>
@@ -107,21 +107,21 @@ flutter run
     </tr>
     <tr align="center">
       <td>
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg" width="120" alt="Material Design"/>
+        <img src="https://img.shields.io/badge/Material_Design-757575?style=for-the-badge&logo=material-design&logoColor=white" width="120" alt="Material Design"/>
         <br>
         <strong>Material Design 3</strong>
         <br>
         <sub>Sistema de diseño</sub>
       </td>
       <td>
-        <img src="https://raw.githubusercontent.com/imaNNeoFighT/fl_chart/master/repo_files/images/fl_chart_logo_large.png" width="120" alt="FL Chart"/>
+        <img src="https://img.shields.io/badge/FL_Chart-02569B?style=for-the-badge&logo=flutter&logoColor=white" width="120" alt="FL Chart"/>
         <br>
         <strong>FL Chart</strong>
         <br>
         <sub>Visualización de datos</sub>
       </td>
       <td>
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain-wordmark.svg" width="120" alt="Firebase"/>
+        <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" width="120" alt="Firebase"/>
         <br>
         <strong>Firebase</strong>
         <br>
