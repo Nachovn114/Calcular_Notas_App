@@ -1,9 +1,9 @@
-# Archivos de configuración de GitHub
-.github/** linguist-vendored
-.github/ISSUE_TEMPLATE/** linguist-vendored
-.github/ISSUE_TEMPLATE/bug_report.md linguist-vendored
-.github/ISSUE_TEMPLATE/feature_request.md linguist-vendored
-.github/ISSUE_TEMPLATE/config.yml linguist-vendored
+# Ocultar archivos de configuración
+.github/** linguist-generated=true
+.github/ISSUE_TEMPLATE/** linguist-generated=true
+.github/ISSUE_TEMPLATE/bug_report.md linguist-generated=true
+.github/ISSUE_TEMPLATE/feature_request.md linguist-generated=true
+.github/ISSUE_TEMPLATE/config.yml linguist-generated=true
 
 # Archivos de documentación
 *.md linguist-documentation
@@ -16,12 +16,12 @@ RELEASE_NOTES.md linguist-documentation
 *.yaml linguist-language=YAML
 *.yml linguist-language=YAML
 
-# Ignorar archivos generados en estadísticas
+# Ignorar archivos generados
 build/** -linguist-documentation
 .dart_tool/** -linguist-documentation
 .idea/** -linguist-documentation
 
-# Tratar ciertos archivos como binarios
+# Archivos binarios
 *.png binary
 *.jpg binary
 *.jpeg binary
