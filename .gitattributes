@@ -1,0 +1,17 @@
+# Archivos de configuración de GitHub
+.github/* linguist-documentation
+.github/ISSUE_TEMPLATE/* linguist-documentation
+
+# Archivos de documentación
+*.md linguist-documentation
+LICENSE linguist-documentation
+
+# Detectar lenguajes correctamente
+*.dart linguist-language=Dart
+*.yaml linguist-language=YAML
+*.yml linguist-language=YAML
+
+# Ignorar archivos generados en estadísticas
+build/** -linguist-documentation
+.dart_tool/** -linguist-documentation
+.idea/** -linguist-documentation 
