@@ -82,56 +82,56 @@ flutter run
 
 <div align="center">
   <table>
-    <tr>
-      <td align="center">
-        <img src="https://storage.googleapis.com/cms-storage-bucket/6a07d8a62f4308d2b854.svg" width="100" alt="Flutter"/>
+    <tr align="center">
+      <td width="33%">
+        <img src="https://storage.googleapis.com/cms-storage-bucket/6a07d8a62f4308d2b854.svg" width="120" alt="Flutter"/>
         <br>
         <strong>Flutter 3.2.3</strong>
         <br>
-        Framework de UI
+        <sub>Framework de UI</sub>
       </td>
-      <td align="center">
-        <img src="https://dart.dev/assets/img/shared/dart/logo+text/horizontal/white.svg" width="100" alt="Dart"/>
+      <td width="33%">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Dart_programming_language_logo.svg" width="120" alt="Dart"/>
         <br>
         <strong>Dart</strong>
         <br>
-        Lenguaje de programación
+        <sub>Lenguaje de programación</sub>
       </td>
-      <td align="center">
-        <img src="https://raw.githubusercontent.com/rrousselGit/provider/master/resources/flutter_favorite.png" width="100" alt="Provider"/>
+      <td width="33%">
+        <img src="https://raw.githubusercontent.com/rrousselGit/provider/master/resources/flutter_favorite.png" width="120" alt="Provider"/>
         <br>
         <strong>Provider</strong>
         <br>
-        Gestión de estado
+        <sub>Gestión de estado</sub>
       </td>
     </tr>
-    <tr>
-      <td align="center">
-        <img src="https://user-images.githubusercontent.com/41328571/110234170-fa9b7300-7f3b-11eb-8b14-3f1d17cd3d42.png" width="100" alt="Material Design"/>
+    <tr align="center">
+      <td>
+        <img src="https://github.com/material-components/material-components-android/raw/master/docs/assets/logo.svg" width="120" alt="Material Design"/>
         <br>
         <strong>Material Design 3</strong>
         <br>
-        Sistema de diseño
+        <sub>Sistema de diseño</sub>
       </td>
-      <td align="center">
-        <img src="https://www.fluttercharts.dev/fl_chart_logo.svg" width="100" alt="FL Chart"/>
+      <td>
+        <img src="https://raw.githubusercontent.com/imaNNeoFighT/fl_chart/master/repo_files/images/fl_chart_logo_small.png" width="120" alt="FL Chart"/>
         <br>
         <strong>FL Chart</strong>
         <br>
-        Visualización de datos
+        <sub>Visualización de datos</sub>
       </td>
-      <td align="center">
-        <img src="https://www.gstatic.com/devrel-devsite/prod/v2c1707f1ecb3b49a47fbec8c0b1cec96cf189c958fe8f54a5cd7a7c68fcd2ddc/firebase/images/lockup.svg" width="100" alt="Firebase"/>
+      <td>
+        <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" width="120" alt="Firebase"/>
         <br>
         <strong>Firebase</strong>
         <br>
-        Backend y analíticas
+        <sub>Backend y analíticas</sub>
       </td>
     </tr>
   </table>
 </div>
 
-### Características principales:
+### ⚡ Características principales:
 
 - **Framework moderno** - Desarrollado con Flutter 3.2.3
 - **Arquitectura robusta** - Patrón Provider para gestión de estado
