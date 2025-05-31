@@ -74,7 +74,7 @@ Si te gusta este proyecto, ¡déjanos una estrella! ⭐
 
 [![GitHub](https://img.shields.io/badge/GitHub-Nachovn114-181717?style=for-the-badge&logo=github)](https://github.com/Nachovn114)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ignacio_Valeria-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ignacio-valeria)
-[![Email](https://img.shields.io/badge/Gmail-ignaciovn11@gmail.com-D14836?style=for-the-badge&logo=gmail)](mailto:ignaciovn11@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-ignaciovn11-D14836?style=for-the-badge&logo=gmail)](https://mail.google.com/mail/?view=cm&fs=1&to=ignaciovn11@gmail.com)
 
 ### 💬 Otros Canales
 
