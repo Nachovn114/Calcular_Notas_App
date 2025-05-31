@@ -4,11 +4,10 @@
 
 <img src="assets/images/banner.jpg" alt="Banner de Calculadora de Notas" width="100%">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Flutter](https://img.shields.io/badge/Flutter-3.2.3-blue?logo=flutter&style=flat-square)](https://flutter.dev)
-[![Stars](https://img.shields.io/github/stars/Nachovn114/Calcular_Notas_App?style=flat-square)](https://github.com/Nachovn114/Calcular_Notas_App/stargazers)
-[![Last Commit](https://img.shields.io/github/last-commit/Nachovn114/Calcular_Notas_App?style=flat-square)](https://github.com/Nachovn114/Calcular_Notas_App/commits/main)
-[![Downloads](https://img.shields.io/github/downloads/Nachovn114/Calcular_Notas_App/total?style=flat-square)](https://github.com/Nachovn114/Calcular_Notas_App/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Flutter](https://img.shields.io/badge/Flutter-3.2.3-blue?style=for-the-badge&logo=flutter)](https://flutter.dev)
+[![Stars](https://img.shields.io/github/stars/Nachovn114/Calcular_Notas_App?style=for-the-badge&logo=github)](https://github.com/Nachovn114/Calcular_Notas_App/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/Nachovn114/Calcular_Notas_App?style=for-the-badge&logo=git)](https://github.com/Nachovn114/Calcular_Notas_App/commits/main)
 
 <p align="center">
   <b>La forma más inteligente de gestionar tus calificaciones académicas</b>
@@ -17,11 +16,11 @@
 </p>
 
 <p align="center">
-  <a href="#-características-destacadas">Características</a> •
-  <a href="#-vista-previa">Vista Previa</a> •
-  <a href="#%EF%B8%8F-tecnologías-utilizadas">Tecnologías</a> •
-  <a href="#-instalación-rápida">Instalación</a> •
-  <a href="#-contacto-y-redes-sociales">Contacto</a>
+  <a href="#-características-destacadas">✨ Características</a> •
+  <a href="#-vista-previa">📱 Vista Previa</a> •
+  <a href="#%EF%B8%8F-tecnologías-utilizadas">🛠️ Tecnologías</a> •
+  <a href="#-instalación-rápida">🚀 Instalación</a> •
+  <a href="#-contacto-y-redes-sociales">📬 Contacto</a>
 </p>
 
 </div>
