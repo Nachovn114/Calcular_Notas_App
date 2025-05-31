@@ -91,7 +91,7 @@ flutter run
         <sub>Framework de UI</sub>
       </td>
       <td width="33%">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Dart_programming_language_logo.svg" width="120" alt="Dart"/>
+        <img src="https://dart.dev/assets/shared/dart-logo-for-shares.png" width="120" alt="Dart"/>
         <br>
         <strong>Dart</strong>
         <br>
@@ -107,21 +107,21 @@ flutter run
     </tr>
     <tr align="center">
       <td>
-        <img src="https://github.com/material-components/material-components-android/raw/master/docs/assets/logo.svg" width="120" alt="Material Design"/>
+        <img src="https://m3.material.io/static/assets/m3-logo.svg" width="120" alt="Material Design"/>
         <br>
         <strong>Material Design 3</strong>
         <br>
         <sub>Sistema de diseño</sub>
       </td>
       <td>
-        <img src="https://raw.githubusercontent.com/imaNNeoFighT/fl_chart/master/repo_files/images/fl_chart_logo_small.png" width="120" alt="FL Chart"/>
+        <img src="https://pub.dev/packages/fl_chart/versions/0.65.0/gen-res/photos/main_logo.png" width="120" alt="FL Chart"/>
         <br>
         <strong>FL Chart</strong>
         <br>
         <sub>Visualización de datos</sub>
       </td>
       <td>
-        <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" width="120" alt="Firebase"/>
+        <img src="https://firebase.google.com/static/downloads/brand-guidelines/PNG/logo-built_white.png" width="120" alt="Firebase"/>
         <br>
         <strong>Firebase</strong>
         <br>
